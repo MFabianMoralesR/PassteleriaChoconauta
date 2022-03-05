@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout y Rutas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #DBA3A3 ;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(39, 196, 170);
+            padding: 20px;
+        }
+        nav {
+            float: center;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: rgb(39, 196, 170);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+<head>
+  <title>PASTELERIA CHOCONAUTAS</title>
+</head>
+<body style="background-color: #DBA3A3 ;">
+
+  <header>
+    <h1 style = "font-family: cursive;"><center>BIENVENIDO A LA ADMINISTRACION DE CHOCONAUTAS</center></H1>
+      <center><img src="images/Pasteleria choconautas.png" width="600"
+        height="500"></center>
+</header>
+
+
+
+<section>
+ 
+  
+  <article>
+      <center><h1>Sabores que quedan </h1></center>
+      
+     <center><table class="default">
+
+        <tr>
+      
+          <td>Choconauta</td>
+      
+          <td>20 piezas</td>
+      
+      
+        </tr>
+      
+        <tr>
+      
+          <td>3 Lunas</td>
+      
+          <td>5 Piezas</td>
+        </tr>
+
+          <tr>
+      
+          <td>Venusilla</td>
+          <td>6 piezas</td>
+      
+        </tr>
+        
+        <tr>
+      
+            <td>Queso de marte</td>
+            <td>6 piezas</td>
+        
+          </tr>
+          <tr>
+      
+            <td>Cafe de jupiter</td>
+            <td>6 piezas</td>
+        
+          </tr>
+      
+      </table>
+      
+        </center> 
+            
+            
+      
+   
+    
+ </article>
+ <img src="images/Pasteleria choconautas.png" width="300"
+ height="200" textalign="left"> 
+ <img src="images/Pasteleria choconautas.png" width="300"
+ height="200" textalign="center"> 
+ <img src="images/Pasteleria choconautas.png" width="300"
+ height="200" textalign="rigth"> 
+ <img src="images/Pasteleria choconautas.png" width="300"
+ height="200" textalign="allrigth"> 
+</section><br><br>
+
+<section>
+    
+  
+    <article>
+        <center><h1>Adornos que quedan </h1></center>
+      
+     <center><table class="default">
+
+        <tr>
+      
+          <td>Fresas</td>
+      
+          <td>20 piezas</td>
+      
+      
+        </tr>
+      
+        <tr>
+      
+          <td>Crema </td>
+      
+          <td>5 Piezas</td>
+        </tr>
+
+          <tr>
+      
+          <td>Durazno</td>
+          <td>6 piezas</td>
+      
+        </tr>
+        
+        <tr>
+      
+            <td>Betun</td>
+            <td>6 piezas</td>
+        
+          </tr>
+      
+      </table>
+      
+        </center> 
+   </article>
+</section><br><br>
+
+   <img src="images/Pasteleria choconautas.png" width="300"
+   height="200" textalign="left"> 
+   <img src="images/Pasteleria choconautas.png" width="300"
+   height="200" textalign="center"> 
+   <img src="images/Pasteleria choconautas.png" width="300"
+   height="200" textalign="rigth"> 
+   <img src="images/Pasteleria choconautas.png" width="300"
+   height="200" textalign="allrigth"> 
+  </section>
+
+ <section>
+    
+  
+    <article>
+        <center><h1>Pedidos realziados </h1></center>
+      
+     <center><table class="default" border="2">
+
+        <tr>
+      
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Telefono</th>
+            <th>Descripcion</th>
+        
+        
+          </tr>
+
+        <tr>
+      
+          <td>Angel Morales</td>
+          <td>angelm@gmail.com</td>
+          <td>9711456895</td>
+          <td>Choconauta con fresas y betun</td>
+      
+   
+        </tr>
+      
+        <tr>
+      
+            <td>Fabian M</td>
+            <td>fabian@gmail.com</td>
+            <td>2556652</td>
+            <td>Cafe de Jupiter con crema chantilli</td>
+        </tr>
+
+          <tr>
+      
+            <td>Raul Torres</td>
+            <td>Torres@gmail.com</td>
+            <td>89895559</td>
+            <td>Queso de marte con Durazno</td>
+      
+        </tr>
+        
+      
+      
+      </table>
+      
+        </center> 
+   </article>
+</section><br><br>
+
+<center><table class="default" >
+
+   
+
+    <tr>
+  
+      <td>    <img src="images/Pasteleria choconautas.png" width="150"
+        height="150" textalign="rigth"> </td>
+      <td>Salina Cruz Oaxaca Mexico, Calle Guaymas Colonia Aviacion Num. 89</td>
+
+    </tr>
+    <table class="default" ></table>
+    <tr>
+  
+        <td>Horario de atencion de Lunes a Sabados de 8:am a 8:00 pm</td>
+
+      </tr><br><br>
+
+      <h5>Todos los drechos reservados 2022</h5>
+    
+  
+   
+
+
+
+   
+
+    
+
+    
+
+</body>
+</html>
